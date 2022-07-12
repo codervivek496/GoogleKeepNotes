@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using RepositoryLayer.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +12,6 @@ namespace RepositoryLayer.Context
                 : base(options)
             {
             }
-            public DbSet<Employee> Employees { get; set; }
+            public DbSet<UserEntity> User { get; set; }
         }
     }
-}
